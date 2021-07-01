@@ -14,7 +14,7 @@ $resultado = $mysqli->query("SELECT id, titulo FROM plato");
 echo '<ol>';
 while ($reg = $resultado->fetch_assoc()) {
     echo '<li>';
-    echo '<a href="http://localhost/dev/CuartoEjercicio/detalle.php?id='. $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a>';
+    echo '<a href="https://first-deploy-php-restaurant.herokuapp.com/detalle.php?id='. $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a>';
     echo '</li>';
 }
 echo '</ol>';
